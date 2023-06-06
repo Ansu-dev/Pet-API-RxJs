@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-    server:
+    pet-server:
         build:
             dockerfile: Dockerfile
         environment:
@@ -8,7 +8,7 @@ services:
             - NODE_ENV=dev
             - DB_HOST=host.docker.internal
             - SERVER_PORT=3000
-        container_name: nest-backend
+        container_name: pet-server
         restart: unless-stopped
         ports:
             - 3000:3000

@@ -7,7 +7,7 @@ import { Logger } from '@nestjs/common';
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
     // * cors SetUp
-    const envAllow = process.env.COMMERCE_ALLOW_CORS_LIST;
+    const envAllow = process.env.ALLOW_CORS_LIST ?? '';
     if (envAllow) {
         const allowList = envAllow.split(',');
         app.enableCors({
