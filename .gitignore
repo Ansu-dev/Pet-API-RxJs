@@ -9,7 +9,3 @@
 
 #build files
 /dist
-
-
-# file-data
-*.data.ts
