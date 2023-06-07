@@ -18,8 +18,8 @@ async function bootstrap() {
     }
     // * Swagger SetUp
     const config = new DocumentBuilder()
-        .setTitle('Nest Template API')
-        .setDescription('Nest Template 1.0 docs')
+        .setTitle('Pet-Server-RxJs API')
+        .setDescription('Pet-Server-RxJs 1.0 docs')
         .setVersion('1.0.0')
         .build();
     const document = SwaggerModule.createDocument(app, config, {
